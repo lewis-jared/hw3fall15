@@ -68,7 +68,7 @@ describe OracleOfBacon do
       its(:data) { should match /unknown/i }
     end
   end
-  describe 'constructing URI', :skip => true do
+  describe 'constructing URI',  do
     subject do
       oob = OracleOfBacon.new('fake_key')
       oob.to = '3%2 "a' ; oob.from = 'George Clooney'
